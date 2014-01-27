@@ -1,0 +1,27 @@
+.floatDiv{position:absolute; /*border-left:#cfcfcf solid 1px;border-top:#cfcfcf solid 1px;border-bottom:#b2b2b2 solid 1px;border-right:#b2b2b2 solid 1px; border-radius: 3px 3px 3px 3px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); background:url(/public/image/hovercard/hovercardC_bg.png) repeat;*/  background:#fff;/*min-width:265px; min-height:128px;height:auto;_height:128px; max-width:500px; ;overflow:hidden;*/  }
+.floatDiv .content{background:#fff; overflow:hidden;border:#dddddd solid 1px; border-radius:4px; /*padding:8px;*/}
+.floatDiv.floatDivB{/*border-right:#cfcfcf solid 1px;border-bottom:#8b8b8b solid 1px;border-top:#cfcfcf solid 1px;border-left:#8b8b8b solid 1px;  box-shadow: -1px 1px 4px  rgba(0, 0, 0, 0.3);*/ }
+.floatDiv  a.fi,.floatDiv  a.fiBottom,.floatDiv  a.fiR,.floatDiv  a.fiRbottom,.floatDiv  a.fiUp,.floatDiv  a.fiRup,.floatDiv  a.fiunder,.floatDiv  a.fiRunder{ background:url(/public/image/hovercard/four_arrows.png) no-repeat;  display:block; position:absolute;}
+/*左边的两个前头方向 */
+.floatDiv  a.fi{ top:28px; left:-3px;z-index:61; width:4px; height:8px; background-position:-1px -29px; }
+.floatDiv  a.fiBottom{bottom:28px; left:-3px;  width:4px; height:8px; z-index:61; background-position:-1px -29px;;}
+/* 右边的两个前头方向 */
+.floatDiv  a.fiR{ top:28px; right:-3px;  width:4px; height:8px; background-position:-5px -29px;  }
+.floatDiv  a.fiRbottom{bottom:28px; right:-3px;  width:4px; height:8px; background-position:-5px -29px;}
+/* 上方的两个前头方向 */
+.floatDiv  a.fiUp{top:-3px; left:10px; background-position:-15px -29px;  width:8px; height:4px;}
+.floatDiv  a.fiRup{top:-3px; right:10px;background-position:-15px -29px; width:8px; height:4px;}
+/* 下方的两个前头方向 */
+.floatDiv  a.fiunder{bottom:-3px; left:25px;background-position:-15px -33px; width:8px; height:4px;}
+.floatDiv  a.fiRunder{bottom:-3px; right:25px;background-position:-15px -33px; width:8px; height:4px;}
+/*----*/
+.floatDiv .closeDivs{postion:relative;}
+.floatDiv .closeDivs .close{width:16px; height:16px; background:url(/public/image/hovercard/close.gif) -4px -193px; display:block;  position:absolute; right:10px; top: 8px;}
+/*.floatDiv ul li label{float:left; width:20%; text-align:right;}
+.floatDiv ul li span dl{ line-height:25px; text-align:left;}*/
+
+/*--- header city search --*/
+#globalCity.floatDiv { max-width: none; width: 560px; top: 42px; /*left: 368px;*/ }
+#globalCity.floatDiv .closeDivs .close{padding:0;}
+
+.cardBgs{background:url(/public/image/hovercard/hovercardC_bg.png) repeat-x; padding:5px;}

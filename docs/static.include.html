@@ -1,0 +1,70 @@
+<?php if(C('STATIC_DEBUG') || isset($_REQUEST['static_debug'])){  // 开发环境 ?>
+<link rel="shortcut icon" href="/public/image/favicon.ico" />
+<link type="text/css" href="/public/css/global.css" rel="stylesheet"/>
+<link type="text/css" href="/public/css/common.css" rel="stylesheet"/>
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="/public/css/ie7.css" media="all" />
+<![endif]-->
+<script>
+STATIC_DEBUG_VALUE = 1; // 开发环境
+MESSAGE_MESSAGE_UNREADURL = "{:U('Message/Message/unread')}";
+INDEX_INDEX_PAGETIMEOUTURL = "{:U('Index/Index/pageTimeOut')}";
+ACCOUNT_USER_LOGINTURL = "{:U('Account/User/login')}";
+</script>
+<script src="/public/basejs/jquery.js"></script>
+<script src="/public/basejs/prototype.js"></script>
+<script src="/public/basejs/upgtool.js"></script>
+<script src="/public/basejs/sea.js"></script>
+<script src="/public/basejs/seastyle.js"></script>
+<script src="/public/basejs/seajstext.js"></script>
+<script>
+// 全局Ajax错误事件
+$(document).ajaxError(function(event, xhr, settings, exception) { 
+  if (window.console) {
+    console.dir({
+      EVENT: event,
+      XHR: xhr,
+      SETTINGS: settings,
+      ERROR: exception
+    });
+  }
+});
+  
+// seajs配置
+seajs.config({
+  base: "/public/moudlejs",
+  debug: true,  // 调试模式
+  charset: 'utf-8',
+  timeout: 30000
+});
+</script>
+<?php } else {  // 生产环境 ?>
+<link rel="shortcut icon" href="/public/image/favicon.ico" />
+<link type="text/css" href="<?php echo baseUrl2VersionUrl("/public/dist/css/base.min.css"); ?>" rel="stylesheet"/>
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="/public/css/ie7.css" media="all" />
+<![endif]-->
+<script>
+STATIC_DEBUG_VALUE = 0; // 表示是生产环境
+MESSAGE_MESSAGE_UNREADURL = "{:U('Message/Message/unread')}";
+INDEX_INDEX_PAGETIMEOUTURL = "{:U('Index/Index/pageTimeOut')}";
+ACCOUNT_USER_LOGINTURL = "{:U('Account/User/login')}";
+</script>
+<script src="<?php echo baseUrl2VersionUrl("/public/dist/basejs/base.min.js"); ?>"></script>
+<script src="<?php echo baseUrl2VersionUrl("/public/dist/basejs/seajs.min.js"); ?>"></script>
+<script>
+<?php if(!isset($_REQUEST['throw_exception'])){ ?>
+// 生产环境不抛错
+window.onerror = function() {
+  return true;
+};
+<?php } ?>
+
+// seajs配置
+seajs.config({
+  debug: false,  // 调试模式
+  charset: 'utf-8',
+  timeout: 30000
+});
+</script>
+<?php } ?>

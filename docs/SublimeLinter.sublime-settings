@@ -1,0 +1,79 @@
+// sublimelinter user setting -- by hoogle
+{
+  // true – 在用户输入时在后台进行即时校验；
+  // false – 只有在初始化的时候才进行校验；
+  // "load-save" – 当文件加载和保存的时候进行校验；
+  // "save-only" – 当文件被保存的时候进行校验；
+  "sublimelinter": "save-only",
+  "sublimelinter_executable_map": {
+    "javascript": "D:/nodejs/node.exe",
+    "css": "D:/nodejs/node.exe",
+    "php": "D:/wamp/bin/php/php5.2.9-2/php.exe"
+  },
+  "jshint_options": {
+    "es3": true, //兼容es3规范，针对旧版浏览器编写的代码
+    "esnext": false, //不使用最新的es6规范
+    "camelcase": true, //使用驼峰式命名
+    "eqeqeq": false, //不强制使用===比较运算符
+    "expr": true, //允许未赋值的函数名表达式，例如console && console.log(1)
+    "freeze": false, //不限制对内置对象的扩展
+    "immed": true, //禁止未用括号包含立即执行函数
+    "latedef": true, //禁止先调用后定义
+    "maxparams": 3, //函数最多不超过3个参数
+    "noarg": false, //不禁止对arguments.caller和arguments.callee的调用
+    "noempty": false, //禁止空代码块
+    "nonew": false, //允许直接new实例化而不赋值给变量
+    "plusplus": false, //允许++和--运算符使用
+    // "quotmark": "single", //字符串使用单引号
+    "smarttabs": false, //不允许混合tab和空格缩进
+    "maxerr": false,
+    "strict": false, //不强制使用es5严格模式
+    "sub": true, //允许用[]形式访问对象属性
+    "unused": false, //允许定义没用的变量，在某些函数回调中，经常出现多个参数，但不一定会用
+    "multistr": false, //禁止多行字符串，改用加号连接
+    "undef": true,  //禁止明确未定义的变量调用，如果你的变量（myvar）是在其他文件中定义的，可以使用/*global myvar */绕过检测
+    "forin": false, // 如果为真，那么，jsHint允许在for in 循环里面不出现hasOwnProperty
+    "devel": true, //允许对调试用的alert和console.log的调用
+    "jquery": true, //检查预定义的全局变量，防止出现$未定义，该项根据实际代码修改
+    "browser": true,
+    "predef": ["define", "seajs", "console", "require", "module"],
+    "wsh": true,
+    "evil": false, // 不允许使用eval
+    "asi": true, // 行尾分号
+    "newcap": true, // jsHint会要求每一个构造函数名都要大写字母开头
+    "curly": true // 使用if和while等结构语句时加上{}来明确代码块
+  },
+  "csslint_options": {
+    // "adjoining-classes": "warning",
+    // "box-model": true,
+    // "box-sizing": "warning",
+    // "compatible-vendor-prefixes": "warning",
+    // "display-property-grouping": true,
+    // "duplicate-background-images": "warning",
+    // "duplicate-properties": true,
+    // "empty-rules": true,
+    // "errors": true,
+    // "fallback-colors": "warning",
+    // "floats": "warning",
+    // "font-faces": "warning",
+    // "font-sizes": "warning",
+    // "gradients": "warning",
+    // "ids": "warning",
+    // "import": "warning",
+    // "important": "warning",
+    // "known-properties": true,
+    // "outline-none": "warning",
+    // "overqualified-elements": "warning",
+    // "qualified-headings": "warning",
+    // "regex-selectors": "warning",
+    // "rules-count": "warning",
+    // "shorthand": "warning",
+    // "star-property-hack": "warning",
+    // "text-indent": "warning",
+    // "underscore-property-hack": "warning",
+    // "unique-headings": "warning",
+    // "universal-selector": "warning",
+    // "vendor-prefix": true,
+    // "zero-units": "warning"
+  }
+}

@@ -1,0 +1,30 @@
+.ui-multiselect{padding:2px 0 2px 4px;text-align:left}
+.ui-multiselect span.ui-icon{float:right}
+.ui-multiselect-single .ui-multiselect-checkboxes input{position:absolute !important;top:auto !important;left:-9999px;}
+.ui-multiselect-single .ui-multiselect-checkboxes label{padding:5px !important}
+.ui-multiselect-header{margin-bottom:3px;padding:3px 0 3px 4px}
+.ui-multiselect-header ul{font-size:12px}
+.ui-multiselect-header ul li{float:left;padding:0 10px 0 0}
+.ui-multiselect-header a{text-decoration:none}
+.ui-multiselect-header a:hover{text-decoration:underline}
+.ui-multiselect-header span.ui-icon{float:left}
+.ui-multiselect-header li.ui-multiselect-close{float:right;text-align:right;padding-right:0}
+.ui-multiselect-menu{display:none;position:absolute;z-index:9999;text-align:left;border-top:0;border-radius:0;background:#ffffff;}
+.ui-multiselect-checkboxes{position:relative /* fixes bug in IE6/7 */;overflow-y:auto}
+.ui-multiselect-checkboxes label{cursor:default;display:block;border:1px solid transparent;padding:3px 1px}
+.ui-multiselect-checkboxes label input{position:relative;top:1px}
+.ui-multiselect-checkboxes li{clear:both;font-size:12px;/*padding-right:3px*/}
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label{text-align:center;font-weight:bold;border-bottom:1px solid}
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a{display:block;padding:3px;margin:1px 0;text-decoration:none}
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label{border:none}
+/*.ui-multiselect.custom, .ui-multiselect-menu.custom{}
+.ui-multiselect.custom:hover, .ui-multiselect-menu.custom:hover{border:1px solid #dddddd;border-radius:none;background:#fff;color:#333;font-weight:normal;}*/
+.ui-multiselect.custom{height:34px;background:#fff url(/public/image/multiselect/f10_select.png) right 6px no-repeat;border-radius:0;color:#666666;font-weight:normal;font-size:12px;font-family:microsoft yahei;/*box-shadow:1px 1px 2px 1px #E6E6E6 inset*/}
+.ui-multiselect.custom:hover{background-position:right -25px;color:#666666;}
+.ui-multiselect-checkboxes label input{vertical-align:0px;}
+.ui-multiselect span.ui-icon{display:none;}
+.ui-multiselect-menu.custom .ui-state-hover{background:#ffe7cc;color:#666666;border:none;border-radius:0;font-size:12px;/*font-weight:bold;*/}
+.ui-multiselect-menu.custom .ui-corner-all{border:none;}
+.ui-multiselect-menu.custom .ui-multiselect-header{border:1px solid #ccc;border-radius:0}
+.ui-multiselect-disabled span{color: #ccc;}
