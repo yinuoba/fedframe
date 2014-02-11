@@ -1,1 +1,24 @@
-.clean{clear: both;}
+html,body{padding:0; margin:0;font:12px/normal SunSin; color:#666; background:#ffffff; }
+h1, h2, h3, h4, h5, h6, form, div, p, i, img, ul, li, ol, table, tr, td,th, fieldset, label, legend,button,input { margin:0; padding:0;}
+li{list-style:none;}
+img{border:none; vertical-align:middle; }
+table{border-collapse:collapse;}
+hr{clear:both; border-width:0;border-top:1px solid #ccc; border-bottom:1px solid #FFF; height:2px; overflow:hidden;}
+
+/*link*/
+a:link {color:#333; text-decoration:none; font-family:arial;}
+a:visited {color:#333; text-decoration:none; font-family:arial;}
+a:hover {color:#bc2931; text-decoration:underline; font-family:arial;}
+a:active {color:#bc2931;}
+
+/*font*/
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.fb{font-weight:800;}
+.fi{font-style:italic;}
+.dn{display:none;}
+.db{display:block;}
+.fl{float:left;}
+.fr{float:right}
+.dele{text-decoration:line-through;}
+.ful{text-decoration:underline;}
