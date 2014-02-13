@@ -8,12 +8,12 @@ fedframe
 	.项目根目录
 	+---.build (项目构建临时目录)
 	+---css (css目录)
-	|   +---mainsource(各个模块的css文件，开发环境由mainsource.css引入，生产环境被压倒main.min.css中)
+	|   +---mainsource(各个模块的css文件，开发环境由mainsource.css引入，生产环境被压到main.min.css中)
 	|   |   ---modules1.css
 	|   |   ---modules2.css
 	|   |   ---modules3.css
 	|   ---reset.css (重置、统一浏览器样式)
-	|   ---common.css (头部、底部、表格、按钮等模块化的样式)
+	|   ---common.css (头部、底部、表格、按钮等公共样式)
 	|   ---mainsource.css (引入mainsource该文件夹下的模块css文件)
 	+---dist (grunt发布目录)
 	|   +---js
@@ -48,7 +48,7 @@ fedframe
 	+---js (js开发目录，符合cmd规范)
 	|   +---appjs (与业务对应的模块)
 	|   |   +---common (公用模块)
-	|   |      ---common.js ()
+	|   |      ---common.js (全站共用业务js)
 	|   +---basejs (基础模块)
 	|   |   ---jquery.js
 	|   |   ---prototype.js
