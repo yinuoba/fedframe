@@ -1,7 +1,7 @@
 fedframe
 ======
 
-Front-End-Develop framework
+前端项目模块化开发脚手架
 
 ## project tree
 
