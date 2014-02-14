@@ -107,7 +107,6 @@ fedframe
 	|---package.json (grunt打包配置文件)
 	|---Gruntfile.js (grunt打包配置文件)
 	|---updateAppjs.json (grunt打包配置文件，用于暂存一定时间内改动过的appjs中的js文件)
-	|---cssimage.py (给css中的背景图片加版本号，在发布脚本中执行)
 
 ## 环境要求
 
