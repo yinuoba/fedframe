@@ -49,5 +49,6 @@ amountexcel.xlsx
 
 node_modules
 .build
-appjs
-normaljs
+js/appjs
+js/normaljs
+dist
