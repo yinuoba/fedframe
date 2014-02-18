@@ -45,8 +45,6 @@ results
 build
 .grunt
 
-amountexcel.xlsx
-
 node_modules
 .build
 js/appjs

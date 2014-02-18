@@ -1,4 +1,0 @@
-/*! upgF2E - v0.1.0 
-* https://www.yrz.cn/
-* Copyright (c) 2014 Front-End development team of UPG Cloud Financing Department; Licensed MIT */
-define("textlength/textlength",[],function(a,b){b.init=function(a){var b=$("[textlength]"),c=!1;a&&(b=$("[textlength]",a),b.length||(b=$(a)),c=!0,b.removeAttr("original-title"),b.removeAttr("full-text")),b.each(function(){var a=$(this);if(!a.attr("full-text")||c){var b=a.attr("textlength"),d=$.trim(a.text()),e=d;a.attr("full-text",e),d.length>b&&upgTool.subStr(d,b)!=d&&(d=upgTool.subStr(d,b)+"...",a.html(d),a.attr("original-title",e),a.attr("title",e),"function"==typeof $.colorbox&&$.colorbox.resize())}})}});
