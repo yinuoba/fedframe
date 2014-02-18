@@ -47,6 +47,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     
     // 注册默认任务.
-    grunt.registerTask('default', ['clean', 'uglify', 'copy']);
+    grunt.registerTask('default', ['uglify', 'copy']);
 
 };

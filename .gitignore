@@ -47,6 +47,5 @@ build
 
 node_modules
 .build
-js/appjs
-js/normaljs
-dist
+appjs
+normaljs
