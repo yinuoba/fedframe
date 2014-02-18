@@ -103,6 +103,7 @@ fedframe
 	|   |   +---widget
 	|   |   +---zclip
 	|   ---normaljs (非cmd模块js)
+	+---tpl (静态模板)
 	+---bin (运用在项目中时的一些脚本片段)
 	|   ---appjs.php (项目中引入对应业务的方法)
 	|   ---baseUrl2VersionUrl.php (根据文件路径返回以最后修改时间为版本号的url)
@@ -111,7 +112,6 @@ fedframe
 	|   ---static.include.html (引入静态文件)
 	|   ---Preferences.sublime-settings (sublime配置文件)
 	|   ---SublimeLinter.sublime-settings (SublimeLinter配置文件)
-	+---tpl (静态模板)
 	|---package.json (grunt打包配置文件)
 	|---Gruntfile.js (grunt打包配置文件)
 	|---updateAppjs.json (grunt打包配置文件，用于暂存一定时间内改动过的appjs中的js文件)
