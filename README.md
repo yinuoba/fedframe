@@ -102,7 +102,15 @@ fedframe
 	|   |   +---webcam
 	|   |   +---widget
 	|   |   +---zclip
-	|   ---nocmdjs (非cmd模块js)
+	|   ---normaljs (非cmd模块js)
+	+---bin (运用在项目中时的一些脚本片段)
+	|   ---appjs.php (项目中引入对应业务的方法)
+	|   ---baseUrl2VersionUrl.php (根据文件路径返回以最后修改时间为版本号的url)
+	|   ---cssimage.py (给css文件中的背景图片url加版本号)
+	|   ---publish.sh (打包脚本，一般放在打包服务器的更新脚本中)
+	|   ---static.include.html (引入静态文件)
+	|   ---Preferences.sublime-settings (sublime配置文件)
+	|   ---SublimeLinter.sublime-settings (SublimeLinter配置文件)
 	+---tpl (静态模板)
 	|---package.json (grunt打包配置文件)
 	|---Gruntfile.js (grunt打包配置文件)
@@ -121,3 +129,8 @@ fedframe-javascript规范：[http://www.mindmeister.com/368844213/javascript](ht
 ## 前端工具
 
 fedframe常用工具：[http://www.mindmeister.com/368884878/](http://www.mindmeister.com/368884878/ "fedframe常用工具")
+
+## 项目部署
+
+	$ npm install
+	$ grunt
