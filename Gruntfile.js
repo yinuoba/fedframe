@@ -120,6 +120,17 @@ module.exports = function(grunt) {
         }
       }
     },
+    
+    css_combo: {
+      options: {
+        banner: '<%= banner %>'
+      },
+      main: {
+        files: {
+          'css/main.combo.css': ['css/main.import.css']
+        }
+      }
+    },
 
     cssmin: { // css压缩、合并
       options: {
@@ -132,7 +143,7 @@ module.exports = function(grunt) {
       },
       mainsource: {
         files: {
-          'dist/css/main.min.css': ['css/mainsource/**/*.css']
+          'dist/css/main.min.css': ['css/main.combo.css']
         }
       },
       moudlecss: { // moudle模块里面的css
@@ -214,6 +225,10 @@ module.exports = function(grunt) {
       basecss: { // 整站通用基础css
         files: ['css/global.css', 'css/common.css'],
         tasks: ['cssmin:basecss']
+      },
+      css_combo: {
+        files: ['css/mainsource/**/*.css'],
+        tasks: ['css_combo']
       }
     }
   });
@@ -224,11 +239,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-cmd-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  // grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-css-combo');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  // grunt.loadNpmTasks('grunt-contrib-less');
 
   // 注册默认任务.
-  grunt.registerTask('default', ['transport', 'concat', 'uglify', 'cssmin', 'copy']);
+  grunt.registerTask('default', ['transport', 'concat', 'uglify', 'css_combo', 'cssmin', 'copy']);
+  grunt.registerTask('combo', ['css_combo']);
 };

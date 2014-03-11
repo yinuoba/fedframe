@@ -1,0 +1,29 @@
+/*
+combined files : 
+
+main/modules1.css
+main/modules2.css
+main/modules3.css
+*/
+
+/**
+ * @description mainsource.css
+ */
+
+
+/**
+ * modules1.css
+ */
+.test_modules1{display: inline;}
+
+
+/**
+ * modules2.css
+ */
+.test_modules2{display: inline;}
+
+
+/**
+ * modules3.css
+ */
+.test_modules3{display: inline;}
