@@ -8,13 +8,14 @@ fedframe
 	.项目根目录
 	+---.build (项目构建临时目录)
 	+---css (css目录)
-	|   +---mainsource(各个模块的css文件，开发环境由mainsource.css引入，生产环境被压到main.min.css中)
+	|   +---main(各个模块的css文件，开发环境由mainsource.css引入，生产环境被压到main.min.css中)
 	|   |   ---modules1.css
 	|   |   ---modules2.css
 	|   |   ---modules3.css
 	|   ---reset.css (重置、统一浏览器样式)
 	|   ---common.css (头部、底部、表格、按钮等公共样式)
-	|   ---mainsource.css (引入mainsource该文件夹下的模块css文件)
+	|   ---main.import.css (引入main文件夹下的模块css文件)
+	|   ---main.combo.css (main.import.css文件经combo后的文件)
 	+---dist (grunt发布目录)
 	|   +---js
 	|   |   +---basejs
@@ -23,7 +24,7 @@ fedframe
 	|   |   +---componentjs
 	|   +---css
 	|   |   ---base.min.css (合并reset.css和common.css)
-	|   |   ---main.min.css (合并mainsource等其他模块css文件)
+	|   |   ---main.min.css (合并main等其他模块css文件)
 	+---images (组件、插件的图片文件夹)
 	|   +---demoimg (放测试用的图片)
 	|   +---97date
